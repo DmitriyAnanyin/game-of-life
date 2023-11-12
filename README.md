@@ -1,6 +1,6 @@
 ## Тестовое задание - Игра "Жизнь"
 
-Просмотреть [Demo](https://dmitriyananyin.github.io/game-of-life)
+Просмотреть [Demo](https://dmitriyananyin.github.io/game-of-life/)
 
 ### Правила игры
 - Место действия игры — замкнутая область которая может быть размечена клетками
