@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Game of life</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="settings">
+      <div class="item">
+        <label for="grid"> Включить сетку </label>
+        <input
+          id="grid"
+          type="checkbox"
+          checked
+        />
+      </div>
+      <div class="item">
+        <label for="width"> Ширина - <span>100</span> </label>
+        <input
+          id="width"
+          type="range"
+          min="20"
+          max="3000"
+          step="10"
+          value="100"
+        />
+      </div>
+      <div class="item">
+        <label for="height"> Высота - <span>100</span></label>
+        <input
+          id="height"
+          type="range"
+          min="20"
+          max="3000"
+          step="10"
+          value="100"
+        />
+      </div>
+      <div class="item">
+        <button id="fillRandom">Заполнить жизнью</button>
+      </div>
+      <div class="item">
+        <button id="clear">Очистить</button>
+      </div>
+      <div class="item">
+        <button id="start">Запустить</button>
+      </div>
+      <div class="item">
+        <button id="toggleLogsPopup">Показать логи</button>
+      </div>
+    </div>
+    <div id="app"></div>
+
+    <div
+      id="popup"
+      class="popup hidden"
+    >
+      <h3 class="mb-xs">Логи игрового функционала</h3>
+      <div class="mb-xs">Переносимый попап</div>
+
+      <ul
+        id="list"
+        class="list"
+      ></ul>
+    </div>
+    <script
+      src="script.js"
+      type="module"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.settings .item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.settings .item label {
+  margin-right: 5px;
+  display: flex;
+}
+.settings .item label span {
+  width: 30px;
+  display: block;
+}
+
+#app {
+  max-width: 90vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+svg {
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mb-xs {
+  margin-bottom: 5px;
+}
+
+.list {
+  max-height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.popup {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: grab;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
