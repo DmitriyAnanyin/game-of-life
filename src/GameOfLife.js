@@ -111,12 +111,12 @@ export default class {
           let partOfDAttribute = '';
 
           if (!dAttribute) {
-            partOfDAttribute = `M${MX},${MY} H${HH}`;
+            partOfDAttribute = `M${MX},${MY}H${HH}`;
           } else {
             const mX = MX - lastX - GRID_ELEMENT_SIZE;
             const mY = MY - lastY;
             const hH = GRID_ELEMENT_SIZE;
-            partOfDAttribute = ` m${mX},${mY} h${hH}`;
+            partOfDAttribute = `m${mX},${mY}h${hH}`;
           }
 
           lastX = MX;
